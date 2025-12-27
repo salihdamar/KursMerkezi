@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KursMerkezi - Courseflow UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-mark">C</div>
+          <div>
+            <div class="logo-title">Courseflow</div>
+            <div class="logo-sub">by Saasify.design</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#explore">Explore Courses</a>
+          <a class="nav-link" href="#compare">Compare Courses</a>
+          <a class="nav-link" href="#detail">Course Detail</a>
+          <a class="nav-link" href="#reviews">Course Reviews</a>
+          <a class="nav-link" href="#syllabus">Course Syllabus</a>
+          <a class="nav-link" href="#instructor">Instructor</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="breadcrumbs">Welcome back, Johnson! 👋</div>
+          <div class="topbar-actions">
+            <button class="icon-button">🔔</button>
+            <button class="icon-button">💬</button>
+            <div class="user-chip">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=facearea&w=120&h=120" alt="User" />
+              <div>
+                <div class="user-name">Johnson Doe</div>
+                <div class="user-role">User Account</div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section id="home" class="section">
+          <h2 class="section-title">Dashboard</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-icon">⏱️</span>
+              <div>
+                <div class="stat-label">This week</div>
+                <div class="stat-value">12.5h</div>
+                <div class="stat-sub">Learning time</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">📚</span>
+              <div>
+                <div class="stat-label">Total</div>
+                <div class="stat-value">4</div>
+                <div class="stat-sub">Courses in progress</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🏆</span>
+              <div>
+                <div class="stat-label">Total</div>
+                <div class="stat-value">12</div>
+                <div class="stat-sub">Certificates earned</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🎯</span>
+              <div>
+                <div class="stat-label">Current</div>
+                <div class="stat-value">85%</div>
+                <div class="stat-sub">Average score</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header">
+            <h3>Continue Learning</h3>
+            <a class="link" href="#">View all courses</a>
+          </div>
+          <div class="card-grid">
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>The Complete AI Guide: Learn ChatGPT</h4>
+                <p>65% completed · Last visited 2 days ago</p>
+                <button class="primary-btn full">Continue Learning</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>Advanced Copywriting Techniques</h4>
+                <p>45% completed · Last visited 5 days ago</p>
+                <button class="primary-btn full ghost">Continue Learning</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>Notion Masterclass: Maximise Your...</h4>
+                <p>25% completed · Last visited 1 week ago</p>
+                <button class="primary-btn full ghost">Continue Learning</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="explore" class="section">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Explore Courses</h2>
+              <p class="section-sub">Discover thousands of courses to start learning something new today</p>
+            </div>
+            <div class="filters">
+              <button class="filter-btn">Duration</button>
+              <button class="filter-btn">Category</button>
+              <button class="filter-btn">Price</button>
+              <button class="filter-btn">Level</button>
+              <button class="filter-btn primary">Sort: Popularity</button>
+            </div>
+          </div>
+          <div class="search-row">
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" placeholder="Search for courses, skills, or topics..." />
+            </div>
+            <div class="search-meta">
+              <span>Showing 245 results</span>
+              <div class="view-toggle">
+                <button class="icon-button">▦</button>
+                <button class="icon-button ghost">☰</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid">
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>Practical Graphic Design: Learn Adobe</h4>
+                <div class="course-meta">500 Students · 5 Docs · 1h 30m</div>
+                <div class="course-footer">
+                  <div class="instructor">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                    Liam Anderson
+                  </div>
+                  <span class="rating">⭐ 5.0</span>
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>Adobe Photoshop CC — Essentials</h4>
+                <div class="course-meta">500 Students · 5 Docs · 1h 30m</div>
+                <div class="course-footer">
+                  <div class="instructor">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                    Ethan Turner
+                  </div>
+                  <span class="rating">⭐ 5.0</span>
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <div class="course-card-body">
+                <h4>Kickstart your Creativity with Procreate</h4>
+                <div class="course-meta">500 Students · 5 Docs · 1h 30m</div>
+                <div class="course-footer">
+                  <div class="instructor">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                    Emily Carter
+                  </div>
+                  <span class="rating">⭐ 5.0</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="compare" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Compare Courses</h2>
+            <div class="actions">
+              <button class="ghost-btn">⬇️ Export Comparison</button>
+              <button class="primary-btn">+ Add Course</button>
+            </div>
+          </div>
+          <div class="compare-search">
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" placeholder="Search for a course to compare" />
+            </div>
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" placeholder="Search for a course to compare" />
+            </div>
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" placeholder="Search for a course to compare" />
+            </div>
+          </div>
+          <div class="compare-grid">
+            <article class="compare-card">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <span class="tag">AI & ML</span>
+              <h4>The Complete AI Guide: Learn ChatGPT</h4>
+              <div class="rating">⭐ 5.0 (500)</div>
+              <div class="course-meta">⏱️ 1h 30m · 📄 5 Docs · 👥 500 Students</div>
+              <div class="compare-footer">
+                <strong>$49.99</strong>
+                <button class="primary-btn">Select Course</button>
+              </div>
+            </article>
+            <article class="compare-card">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <span class="tag">Marketing</span>
+              <h4>Copywriting for Six Figures: Become a Copywriting God!</h4>
+              <div class="rating">⭐ 5.0 (500)</div>
+              <div class="course-meta">⏱️ 1h 30m · 📄 5 Docs · 👥 500 Students</div>
+              <div class="compare-footer">
+                <strong>$59.99</strong>
+                <button class="primary-btn">Select Course</button>
+              </div>
+            </article>
+            <article class="compare-card">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="Course" />
+              <span class="tag">Marketing</span>
+              <h4>Complete Copywriting Course From Beginner To Advanced</h4>
+              <div class="rating">⭐ 5.0 (500)</div>
+              <div class="course-meta">⏱️ 1h 30m · 📄 5 Docs · 👥 500 Students</div>
+              <div class="compare-footer">
+                <strong>$39.99</strong>
+                <button class="primary-btn">Select Course</button>
+              </div>
+            </article>
+          </div>
+          <div class="comparison-table">
+            <div class="table-row header">
+              <span>Feature</span>
+              <span>The Complete AI Guide</span>
+              <span>Copywriting for Six Figures</span>
+              <span>Complete Copywriting Course</span>
+            </div>
+            <div class="table-row">
+              <span>Price</span>
+              <span>$49.99</span>
+              <span>$59.99</span>
+              <span>$39.99</span>
+            </div>
+            <div class="table-row">
+              <span>Duration</span>
+              <span>42 hours</span>
+              <span>35 hours</span>
+              <span>28 hours</span>
+            </div>
+            <div class="table-row">
+              <span>Students Enrolled</span>
+              <span>15,200+</span>
+              <span>12,800+</span>
+              <span>9,500+</span>
+            </div>
+            <div class="table-row">
+              <span>Certificate of Completion</span>
+              <span class="success">✓</span>
+              <span class="success">✓</span>
+              <span class="success">✓</span>
+            </div>
+            <div class="table-row">
+              <span>Lifetime Access</span>
+              <span class="success">✓</span>
+              <span class="success">✓</span>
+              <span class="danger">✕</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="detail" class="section">
+          <div class="detail-hero">
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+              alt="Course hero"
+            />
+            <button class="play-button">▶</button>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-main">
+              <div class="pill-group">
+                <span class="pill">AI & Machine Learning</span>
+                <span class="pill">Bestseller</span>
+              </div>
+              <h2>The Complete AI Guide: Learn ChatGPT, Generative AI & More</h2>
+              <p>
+                Master the fundamentals and advanced concepts of AI, including practical applications with ChatGPT, machine learning models,
+                and real-world AI solutions.
+              </p>
+              <div class="rating">⭐⭐⭐⭐⭐ 4.9 (2.1K reviews)</div>
+              <div class="detail-meta">
+                <div class="instructor">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                  <div>
+                    <div>Liam Anderson</div>
+                    <span>AI Research Scientist & Instructor</span>
+                  </div>
+                </div>
+                <div class="info-list">
+                  <span>⏱️ 42 hours of content</span>
+                  <span>📚 75 lessons</span>
+                  <span>⬇️ Downloadable resources</span>
+                  <span>🏅 Certificate of completion</span>
+                </div>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="price-row">
+                <div>
+                  <div class="price">$89.99</div>
+                  <div class="price-old">$199.99</div>
+                </div>
+                <button class="primary-btn full">Enroll Now</button>
+                <button class="ghost-btn full">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="detail-panels">
+            <div class="panel">
+              <h4>What You'll Learn</h4>
+              <ul>
+                <li>Understand core AI concepts and their applications</li>
+                <li>Build and deploy machine learning models</li>
+                <li>Master ChatGPT and generative AI tools</li>
+                <li>Develop AI-powered applications from scratch</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h4>Your Learning Progress</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+              <button class="primary-btn full">Start Learning</button>
+              <span>Course starts: April 15, 2025 · Estimated completion: 8 weeks</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Course Reviews</h2>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.9 (2,148 reviews)</div>
+          </div>
+          <div class="reviews-grid">
+            <div class="review-summary">
+              <h4>Rating Breakdown</h4>
+              <div class="rating-bar">
+                <span>5 stars</span>
+                <div class="bar"><span style="width: 92%"></span></div>
+                <span>92%</span>
+              </div>
+              <div class="rating-bar">
+                <span>4 stars</span>
+                <div class="bar"><span style="width: 6%"></span></div>
+                <span>6%</span>
+              </div>
+              <div class="rating-bar">
+                <span>3 stars</span>
+                <div class="bar"><span style="width: 1%"></span></div>
+                <span>1%</span>
+              </div>
+            </div>
+            <div class="review-list">
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="instructor">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=80&h=80" alt="Student" />
+                    <div>
+                      <strong>Sarah Johnson</strong>
+                      <div>⭐⭐⭐⭐⭐</div>
+                    </div>
+                  </div>
+                  <span>April 10, 2025</span>
+                </div>
+                <h5>Exceptional course for AI beginners and intermediates</h5>
+                <p>
+                  The instructor breaks down complex AI concepts into digestible pieces and provides real-world examples that make learning
+                  engaging and practical.
+                </p>
+                <div class="review-actions">👍 Helpful (24) · 👎 Not Helpful (2) · Report</div>
+              </article>
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="instructor">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=80&h=80" alt="Student" />
+                    <div>
+                      <strong>David Thompson</strong>
+                      <div>⭐⭐⭐⭐☆</div>
+                    </div>
+                  </div>
+                  <span>March 22, 2025</span>
+                </div>
+                <h5>Great content, could use more advanced examples</h5>
+                <p>
+                  The course provides an excellent foundation in AI and generative models. Liam explains concepts clearly and the course flow
+                  is logical.
+                </p>
+                <div class="review-actions">👍 Helpful (15) · 👎 Not Helpful (3) · Report</div>
+              </article>
+            </div>
+          </div>
+          <div class="panel write-review">
+            <h4>Write a Review</h4>
+            <input type="text" placeholder="Review Title" />
+            <textarea placeholder="What did you like or dislike about this course?"></textarea>
+            <label class="checkbox">
+              <input type="checkbox" />
+              I confirm this is my honest opinion about this course
+            </label>
+            <button class="primary-btn">Submit Review</button>
+          </div>
+        </section>
+
+        <section id="syllabus" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Course Syllabus</h2>
+            <div class="actions">
+              <span>75 lessons (42 hours)</span>
+              <button class="ghost-btn">Download Materials</button>
+            </div>
+          </div>
+          <div class="syllabus-grid">
+            <div class="panel">
+              <h4>About This Course</h4>
+              <p>
+                This comprehensive course will take you from AI beginner to expert. You'll learn the fundamentals of artificial intelligence,
+                machine learning, and deep learning, with a special focus on generative AI technologies like ChatGPT and DALL·E.
+              </p>
+              <div class="pill-group">
+                <span class="pill">What You'll Learn</span>
+                <span class="pill">Requirements</span>
+              </div>
+              <ul>
+                <li>Master prompt engineering techniques</li>
+                <li>Build and deploy your own AI models</li>
+                <li>Create generative art with DALL·E</li>
+                <li>Understand the ethical implications of AI</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h4>Course Content</h4>
+              <div class="accordion-item">
+                <div>
+                  <strong>Module 1: Introduction to AI & Machine Learning</strong>
+                  <div>8 lessons · 4.5 hours</div>
+                </div>
+                <span class="status">100% Complete</span>
+              </div>
+              <div class="accordion-item">
+                <div>
+                  <strong>Module 2: Generative AI Fundamentals</strong>
+                  <div>10 lessons · 6 hours</div>
+                </div>
+                <span class="status">60% Complete</span>
+              </div>
+              <div class="accordion-item">
+                <div>
+                  <strong>Module 3: ChatGPT & Prompt Engineering</strong>
+                  <div>12 lessons · 7 hours</div>
+                </div>
+                <span class="status">0% Complete</span>
+              </div>
+            </div>
+            <div class="panel">
+              <h4>Course Resources</h4>
+              <div class="resource-list">
+                <div class="resource-item">📄 Course Handbook (PDF · 12.5 MB)</div>
+                <div class="resource-item">📦 Code Examples (ZIP · 45.2 MB)</div>
+                <div class="resource-item">📊 AI Model Comparison Sheet (XLSX · 2.8 MB)</div>
+                <div class="resource-item">🎥 Supplemental Video Tutorials</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="instructor" class="section">
+          <div class="instructor-hero">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=200&h=200" alt="Instructor" />
+            <div>
+              <h2>Emily Carter</h2>
+              <p>Senior AI & Machine Learning Instructor</p>
+              <div class="pill-group">
+                <span class="pill">45.2K Students</span>
+                <span class="pill">12 Courses</span>
+                <span class="pill">4.9 Rating</span>
+                <span class="pill">2,450 Hours of Content</span>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="primary-btn">Follow</button>
+              <button class="ghost-btn">Message</button>
+            </div>
+          </div>
+          <div class="panel">
+            <h4>Biography</h4>
+            <p>
+              Emily Carter is a distinguished AI and Machine Learning instructor with over 10 years of experience in the tech industry. She
+              has worked with leading companies including Google, Microsoft, and Amazon.
+            </p>
+          </div>
+          <div class="panel">
+            <h4>My Courses</h4>
+            <div class="card-grid">
+              <article class="course-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Course" />
+                <div class="course-card-body">
+                  <h4>Craft a Winning Marketing Strategy for Your Small Business</h4>
+                  <div class="course-meta">500 Students · 5 Docs · 1h 30m</div>
+                  <div class="course-footer">
+                    <div class="instructor">
+                      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                      Alexandra Rodriguez
+                    </div>
+                    <span class="rating">⭐ 5.0</span>
+                  </div>
+                </div>
+              </article>
+              <article class="course-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Course" />
+                <div class="course-card-body">
+                  <h4>Create a Goal Board in Canva - Your Vision Board</h4>
+                  <div class="course-meta">500 Students · 5 Docs · 1h 30m</div>
+                  <div class="course-footer">
+                    <div class="instructor">
+                      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=80&h=80" alt="Instructor" />
+                      Sarah Johnson
+                    </div>
+                    <span class="rating">⭐ 5.0</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
